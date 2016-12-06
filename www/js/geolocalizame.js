@@ -44,8 +44,8 @@ function onSuccess(position) {
 		 });
         
         
-		 //Aquí iniciamos la carga de los datos desde JSON  
-         $.getJSON('http://www.franciscolarreaict.com/jsonproject/landmarks3.php', function(data) { 
+		 //Aquí iniciamos la carga de los datos desde JSON
+         $.getJSON('...Aquí va la url de tu backend', function(data) {
         	 
         	 $.each( data , function( key, val) {
         		 
