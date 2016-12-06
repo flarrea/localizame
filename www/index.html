@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Localízame</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+    
+<script src="lib/jquery-2.1.1.min.js"></script>
+<script src="js/app.js"></script>
+<script src="lib/jquery.mobile-1.4.5.min.js"></script>
+<!-- Archivo que almacena el javascript que cre el mapa y carga los marcadores   -->
+<script src="js/geolocalizame.js"></script>
+    
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+<div id="titulo" align="center">
+    	<h3>Mi Localizador Personal</h3>
+    </div>
+        
+    <div id="map_canvas"></div>
+    
+    <div id="buttons">
+	    <button id="getLocationButton" onclick="getLocation()" >Localizar</button>
+	    <button id="exitButton" onclick="closeApp()" >Salir</button>
+    </div>
+
+</div>
+
+<!--  Archivo que es inyectado por open-source Apache Cordova project al compilar la App  -->
+<script src="cordova.js"></script>
+
+
+<!-- Conectamos con la API de Google Maps   -->    
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8hr7f4rXz6Z9CXKQd9_v37ci8TXSf1vY"></script>
+
+</body>
+</html>
